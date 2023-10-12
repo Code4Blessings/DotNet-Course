@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j8jxj30QE1QlrtMqbM9DIB1aYrROUUn22PS9heyMbRf9Oge74Lt27/7fKCO1kmKGBeAL0sZzrTfqP2wfa9GowQ==",
+  "dgSpecHash": "0LaH6cLsn6FxYZCM7GKYyVVbg+IHnxKdJXWwe7pWkx/QQiGOZ+kTu5PS5cww1qhooBZ2MuI8ln2nXJyES8/xgA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rwarden\\OneDrive - SAIA\\Desktop\\Practice-Projects\\dotnet-course-code\\HelloWorld\\HelloWorld.csproj",
+  "projectFilePath": "C:\\Users\\rwarden\\OneDrive - SAIA\\Desktop\\Practice-Projects\\DotNet-Course\\dotnet-course-code\\HelloWorld\\HelloWorld.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

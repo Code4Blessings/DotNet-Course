@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rwarden\\OneDrive - SAIA\\Desktop\\Practice-Projects\\dotnet-course-code\\HelloWorld\\HelloWorld.csproj",
+      "projectUniqueName": "C:\\Users\\rwarden\\OneDrive - SAIA\\Desktop\\Practice-Projects\\DotNet-Course\\dotnet-course-code\\HelloWorld\\HelloWorld.csproj",
       "projectName": "HelloWorld",
-      "projectPath": "C:\\Users\\rwarden\\OneDrive - SAIA\\Desktop\\Practice-Projects\\dotnet-course-code\\HelloWorld\\HelloWorld.csproj",
+      "projectPath": "C:\\Users\\rwarden\\OneDrive - SAIA\\Desktop\\Practice-Projects\\DotNet-Course\\dotnet-course-code\\HelloWorld\\HelloWorld.csproj",
       "packagesPath": "C:\\Users\\rwarden\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rwarden\\OneDrive - SAIA\\Desktop\\Practice-Projects\\dotnet-course-code\\HelloWorld\\obj\\",
+      "outputPath": "C:\\Users\\rwarden\\OneDrive - SAIA\\Desktop\\Practice-Projects\\DotNet-Course\\dotnet-course-code\\HelloWorld\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rwarden\\AppData\\Roaming\\NuGet\\NuGet.Config",
