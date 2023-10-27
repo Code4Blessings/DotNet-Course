@@ -6,55 +6,79 @@ namespace HelloWorld // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-          int myInt = 5;
+          int[] intsToCompress = new int[] {10, 15, 20, 25, 30, 12, 34};
 
-          Console.WriteLine(myInt);
-          int mySecondInt = 10;
-
-          myInt++;
-
-          Console.WriteLine(myInt);
-        
-            myInt += 7;
-          Console.WriteLine(myInt);
-
-            myInt -= 8;
-            Console.WriteLine(myInt);
-
-            Console.WriteLine(myInt * mySecondInt);
-
-            Console.WriteLine(mySecondInt / myInt);
-
-            //Exponents
-
-            Console.WriteLine(Math.Pow(5, 2));
-
-            //Square root
-
-            Console.WriteLine(Math.Sqrt(25));
-
-            //Use operators to change the value of strings
-
-            string myString = "Test";
-
-            Console.WriteLine(myString);
-
-            myString += "ing";
-
-            Console.WriteLine(myString);
-
-            myString = myString + " \"third part.\"";
-
-            Console.WriteLine(myString);
-
-            //Splitting strings
-
-            string[] myStringArray = myString.Split(". ");
+          DateTime startTime = DateTime.Now;
             
-            Console.WriteLine(myStringArray[0]);
-            Console.WriteLine(myStringArray[1]);
-            Console.WriteLine(myStringArray[2]);
-            
+            int totalValue = intsToCompress[0] + intsToCompress[1] + intsToCompress[2] + intsToCompress[3] + intsToCompress[4] + intsToCompress[5] + intsToCompress[6];
+            Console.WriteLine(totalValue);
+
+            Console.WriteLine((DateTime.Now - startTime).TotalSeconds);
+            //146
+
+            totalValue = 0;
+
+            startTime = DateTime.Now;
+
+            for (int i = 0; i < intsToCompress.Length; i++)
+            {
+                totalValue += intsToCompress[i];
+                
+            }
+
+            Console.WriteLine((DateTime.Now - startTime).TotalSeconds);
+
+            Console.WriteLine(totalValue);
+
+            //ForEach
+
+            totalValue = 0;
+            startTime = DateTime.Now;
+            foreach (int i in intsToCompress)
+            {
+                totalValue += i;
+            }
+            Console.WriteLine((DateTime.Now - startTime).TotalSeconds);
+            Console.WriteLine(totalValue);
+
+            //While
+
+            totalValue = 0;
+            startTime = DateTime.Now;
+            int index = 0;
+
+            while(index < intsToCompress.Length)
+            {
+                totalValue += intsToCompress[index];
+                index++;
+            }
+
+            Console.WriteLine((DateTime.Now - startTime).TotalSeconds);
+            Console.WriteLine(totalValue);
+
+            //Do While
+
+            totalValue = 0;
+            startTime = DateTime.Now;
+            index = 0;
+
+            do
+            {
+                totalValue += intsToCompress[index];
+                index++;
+            }
+            while (index < intsToCompress.Length);
+            Console.WriteLine((DateTime.Now - startTime).TotalSeconds);
+            Console.WriteLine(totalValue);
+
+            foreach(int i in intsToCompress)
+            {
+                if(i % 2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+                
+            }
         }
     }
 }
