@@ -77,8 +77,29 @@ namespace HelloWorld // Note: actual namespace depends on the project name.
                 {
                     Console.WriteLine(i);
                 }
-                
+
             }
+            startTime = DateTime.Now;
+            totalValue = 0;
+            totalValue = GetSum(intsToCompress);
+            Console.WriteLine((DateTime.Now - startTime).TotalSeconds);
+            Console.WriteLine(totalValue);
+
+            int[] intsToCompress2 = new int[] {23, 23, 53, 56, 83, 92};
+
+            totalValue = GetSum(intsToCompress2);
+            Console.WriteLine(totalValue);
+        }
+
+        static private int GetSum(int[] intsToCompress)
+        {
+            //int[] intsToCompress = new int[] {10, 15, 20, 25, 30, 12, 34};
+            int totalValue = 0;
+            foreach (int intForCompression in intsToCompress)
+            {
+                totalValue += intForCompression;
+            }
+            return totalValue;
         }
     }
 }
